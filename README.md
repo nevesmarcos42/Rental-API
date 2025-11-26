@@ -64,7 +64,7 @@ Dotnet8-Rental-API/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/Dotnet8-Rental-API.git
+git clone https://github.com/nevesmarcos42/Dotnet8-Rental-API.git
 cd Dotnet8-Rental-API
 
 # Execute todos os serviços (PostgreSQL, Kafka, Zookeeper, API)
@@ -78,7 +78,7 @@ docker-compose up -d
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/Dotnet8-Rental-API.git
+git clone https://github.com/nevesmarcos42/Dotnet8-Rental-API.git
 cd Dotnet8-Rental-API
 
 # Restore dependências
