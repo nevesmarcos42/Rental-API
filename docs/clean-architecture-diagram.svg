@@ -1,0 +1,188 @@
+<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .domain-circle { fill: #4CAF50; stroke: #2E7D32; stroke-width: 4; }
+      .application-circle { fill: #2196F3; stroke: #1565C0; stroke-width: 4; }
+      .infrastructure-circle { fill: #FFC107; stroke: #F57C00; stroke-width: 4; }
+      .api-circle { fill: #FF5722; stroke: #D84315; stroke-width: 4; }
+      .text-white { fill: white; font-family: Arial, sans-serif; font-weight: bold; }
+      .text-black { fill: #000; font-family: Arial, sans-serif; font-weight: bold; }
+      .text-small { font-size: 12px; font-weight: normal; }
+      .text-medium { font-size: 14px; }
+      .text-large { font-size: 18px; }
+      .arrow { stroke: #1976D2; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1976D2" />
+    </marker>
+  </defs>
+  
+  <!-- Título -->
+  <text x="600" y="40" text-anchor="middle" class="text-black text-large" font-size="24px">
+    Clean Architecture - Sistema de Locação de Veículos
+  </text>
+  
+  <!-- Círculo 4: API (mais externo) -->
+  <circle cx="600" cy="600" r="520" class="api-circle" opacity="0.3"/>
+  <text x="600" y="120" text-anchor="middle" class="text-white text-large">
+    🌐 API (Presentation Layer)
+  </text>
+  
+  <!-- API Content -->
+  <text x="200" y="180" class="text-white text-medium">Controllers:</text>
+  <text x="200" y="205" class="text-white text-small">• VehiclesController</text>
+  <text x="200" y="225" class="text-white text-small">• CustomersController</text>
+  <text x="200" y="245" class="text-white text-small">• RentalsController</text>
+  <text x="200" y="265" class="text-white text-small">• AuthController</text>
+  
+  <text x="950" y="180" class="text-white text-medium">Middleware:</text>
+  <text x="950" y="205" class="text-white text-small">• JWT Authentication</text>
+  <text x="950" y="225" class="text-white text-small">• Authorization (Roles)</text>
+  <text x="950" y="245" class="text-white text-small">• CORS Policy</text>
+  <text x="950" y="265" class="text-white text-small">• Swagger/OpenAPI</text>
+  
+  <!-- Círculo 3: Infrastructure -->
+  <circle cx="600" cy="600" r="400" class="infrastructure-circle" opacity="0.4"/>
+  <text x="600" y="230" text-anchor="middle" class="text-black text-large">
+    🔌 INFRASTRUCTURE (Frameworks &amp; Drivers)
+  </text>
+  
+  <!-- Infrastructure Content -->
+  <text x="220" y="310" class="text-black text-medium">Persistence:</text>
+  <text x="220" y="335" class="text-black text-small">• RentalDbContext</text>
+  <text x="220" y="355" class="text-black text-small">• EF Core 8.0.8</text>
+  <text x="220" y="375" class="text-black text-small">• Migrations</text>
+  
+  <text x="900" y="310" class="text-black text-medium">Repositories:</text>
+  <text x="900" y="335" class="text-black text-small">• VehicleRepository</text>
+  <text x="900" y="355" class="text-black text-small">• CustomerRepository</text>
+  <text x="900" y="375" class="text-black text-small">• RentalRepository</text>
+  <text x="900" y="395" class="text-black text-small">• UnitOfWork</text>
+  
+  <text x="220" y="900" class="text-black text-medium">Services:</text>
+  <text x="220" y="925" class="text-black text-small">• AuthService (JWT)</text>
+  <text x="220" y="945" class="text-black text-small">• BCrypt Hashing</text>
+  
+  <text x="900" y="900" class="text-black text-medium">Messaging:</text>
+  <text x="900" y="925" class="text-black text-small">• KafkaProducer</text>
+  <text x="900" y="945" class="text-black text-small">• Event Publishing</text>
+  
+  <!-- Círculo 2: Application -->
+  <circle cx="600" cy="600" r="280" class="application-circle" opacity="0.5"/>
+  <text x="600" y="350" text-anchor="middle" class="text-white text-large">
+    🔧 APPLICATION (Use Cases)
+  </text>
+  
+  <!-- Application Content -->
+  <text x="320" y="420" class="text-white text-medium">Commands (CQRS):</text>
+  <text x="320" y="445" class="text-white text-small">• CreateVehicleCommand</text>
+  <text x="320" y="465" class="text-white text-small">• CreateRentalCommand</text>
+  <text x="320" y="485" class="text-white text-small">• RenewRentalCommand</text>
+  <text x="320" y="505" class="text-white text-small">• CompleteRentalCommand</text>
+  
+  <text x="750" y="420" class="text-white text-medium">Queries (CQRS):</text>
+  <text x="750" y="445" class="text-white text-small">• GetAllVehiclesQuery</text>
+  <text x="750" y="465" class="text-white text-small">• GetAvailableVehiclesQuery</text>
+  <text x="750" y="485" class="text-white text-small">• GetActiveRentalsQuery</text>
+  
+  <text x="320" y="730" class="text-white text-medium">Handlers (MediatR):</text>
+  <text x="320" y="755" class="text-white text-small">• CreateVehicleCommandHandler</text>
+  <text x="320" y="775" class="text-white text-small">• CreateRentalCommandHandler</text>
+  <text x="320" y="795" class="text-white text-small">• GetAllVehiclesQueryHandler</text>
+  
+  <text x="750" y="730" class="text-white text-medium">Validators:</text>
+  <text x="750" y="755" class="text-white text-small">• FluentValidation</text>
+  <text x="750" y="775" class="text-white text-small">• CreateVehicleValidator</text>
+  <text x="750" y="795" class="text-white text-small">• CreateRentalValidator</text>
+  
+  <!-- Círculo 1: Domain (núcleo) -->
+  <circle cx="600" cy="600" r="160" class="domain-circle" opacity="0.8"/>
+  <text x="600" y="480" text-anchor="middle" class="text-white text-large">
+    🎯 DOMAIN
+  </text>
+  <text x="600" y="505" text-anchor="middle" class="text-white text-medium">
+    (Business Rules)
+  </text>
+  
+  <!-- Domain Content -->
+  <text x="600" y="560" text-anchor="middle" class="text-white text-medium">Entities:</text>
+  <text x="600" y="585" text-anchor="middle" class="text-white text-small">Vehicle • Customer</text>
+  <text x="600" y="605" text-anchor="middle" class="text-white text-small">Rental • RentalReturn</text>
+  <text x="600" y="625" text-anchor="middle" class="text-white text-small">User • BaseEntity</text>
+  
+  <text x="600" y="660" text-anchor="middle" class="text-white text-medium">Enums:</text>
+  <text x="600" y="685" text-anchor="middle" class="text-white text-small">VehicleStatus • VehicleType</text>
+  <text x="600" y="705" text-anchor="middle" class="text-white text-small">RentalStatus • UserRole</text>
+  
+  <!-- Setas de Dependência -->
+  <path d="M 600 140 L 600 200" class="arrow"/>
+  <text x="620" y="175" class="text-black text-small">depende</text>
+  
+  <path d="M 600 260 L 600 320" class="arrow"/>
+  <text x="620" y="295" class="text-black text-small">depende</text>
+  
+  <path d="M 600 380 L 600 440" class="arrow"/>
+  <text x="620" y="415" class="text-black text-small">depende</text>
+  
+  <!-- External Services -->
+  <g id="postgresql">
+    <rect x="80" y="520" width="100" height="80" fill="#336791" stroke="#23527c" stroke-width="2" rx="5"/>
+    <text x="130" y="550" text-anchor="middle" class="text-white text-small">🐘</text>
+    <text x="130" y="575" text-anchor="middle" class="text-white text-small">PostgreSQL</text>
+    <text x="130" y="595" text-anchor="middle" class="text-white text-small">Database</text>
+  </g>
+  
+  <g id="kafka">
+    <rect x="1020" y="520" width="100" height="80" fill="#231F20" stroke="#000" stroke-width="2" rx="5"/>
+    <text x="1070" y="550" text-anchor="middle" class="text-white text-small">📨</text>
+    <text x="1070" y="575" text-anchor="middle" class="text-white text-small">Apache</text>
+    <text x="1070" y="595" text-anchor="middle" class="text-white text-small">Kafka</text>
+  </g>
+  
+  <!-- Setas para External Services -->
+  <path d="M 180 560 L 220 560" class="arrow"/>
+  <path d="M 1020 560 L 980 560" class="arrow"/>
+  
+  <!-- Legenda -->
+  <g id="legend">
+    <rect x="400" y="1050" width="400" height="130" fill="white" stroke="#333" stroke-width="2" rx="5"/>
+    <text x="600" y="1075" text-anchor="middle" class="text-black text-medium">Regra de Dependência</text>
+    
+    <text x="420" y="1100" class="text-black text-small">✅ Domain: Sem dependências (núcleo puro)</text>
+    <text x="420" y="1120" class="text-black text-small">✅ Application: Depende apenas do Domain</text>
+    <text x="420" y="1140" class="text-black text-small">✅ Infrastructure: Implementa Domain e Application</text>
+    <text x="420" y="1160" class="text-black text-small">✅ API: Orquestra Application e Infrastructure</text>
+  </g>
+  
+  <!-- Padrões Implementados -->
+  <g id="patterns">
+    <rect x="50" y="1050" width="320" height="130" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="5"/>
+    <text x="210" y="1075" text-anchor="middle" class="text-black text-medium">Padrões Arquiteturais</text>
+    
+    <text x="70" y="1100" class="text-black text-small">• Clean Architecture</text>
+    <text x="70" y="1120" class="text-black text-small">• CQRS (MediatR)</text>
+    <text x="70" y="1140" class="text-black text-small">• Repository Pattern</text>
+    <text x="70" y="1160" class="text-black text-small">• Unit of Work</text>
+    
+    <text x="220" y="1100" class="text-black text-small">• Dependency Injection</text>
+    <text x="220" y="1120" class="text-black text-small">• JWT Authentication</text>
+    <text x="220" y="1140" class="text-black text-small">• Event-Driven (Kafka)</text>
+    <text x="220" y="1160" class="text-black text-small">• FluentValidation</text>
+  </g>
+  
+  <!-- Tecnologias -->
+  <g id="tech">
+    <rect x="830" y="1050" width="320" height="130" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="5"/>
+    <text x="990" y="1075" text-anchor="middle" class="text-black text-medium">Tecnologias Principais</text>
+    
+    <text x="850" y="1100" class="text-black text-small">• .NET 8.0</text>
+    <text x="850" y="1120" class="text-black text-small">• ASP.NET Core Web API</text>
+    <text x="850" y="1140" class="text-black text-small">• Entity Framework Core 8</text>
+    <text x="850" y="1160" class="text-black text-small">• PostgreSQL 16</text>
+    
+    <text x="1000" y="1100" class="text-black text-small">• MediatR 12.4.1</text>
+    <text x="1000" y="1120" class="text-black text-small">• Kafka 2.3.0</text>
+    <text x="1000" y="1140" class="text-black text-small">• xUnit + Moq</text>
+    <text x="1000" y="1160" class="text-black text-small">• Swagger/OpenAPI</text>
+  </g>
+</svg>

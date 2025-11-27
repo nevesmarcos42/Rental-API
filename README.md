@@ -1,6 +1,6 @@
 # Rental API - Sistema de Locação de Veículos
 
-![Sistema de Locação de Veículos](docs/2.jpg)
+![Sistema de Locação de Veículos](docs/projeto-e-dependencias.jpg)
 
 ## Sobre o Projeto
 
