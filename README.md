@@ -1,7 +1,5 @@
 # Rental API - Sistema de Locação de Veículos
 
-![Sistema de Locação de Veículos](docs/2.jpg)
-
 ## Sobre o Projeto
 
 API RESTful para gerenciamento de locadora de veículos, desenvolvida em .NET 8 com Clean Architecture e SOLID.
@@ -21,12 +19,6 @@ API RESTful para gerenciamento de locadora de veículos, desenvolvida em .NET 8 
 - GitHub Actions para CI/CD automatizado
 
 ## Arquitetura
-
-![Diagrama Clean Architecture](docs/clean-architecture-diagram.svg)
-
-_Diagrama circular da Clean Architecture mostrando as camadas: Domain (núcleo verde), Application (azul), Infrastructure (amarelo) e API (vermelho)_
-
-### Estrutura do Projeto
 
 ```
 Dotnet8-Rental-API/
