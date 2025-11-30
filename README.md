@@ -65,14 +65,14 @@ Rental API é uma aplicação completa para gerenciamento de locadoras de veícu
 • Controle de status  
 • Validação de dados
 
-#### 👥 Clientes
+####  Clientes
 
 • Cadastro completo de clientes  
 • CRUD completo  
 • Validação de CNH  
 • Histórico de aluguéis
 
-#### 📋 Aluguéis
+####  Aluguéis
 
 • Criar aluguéis com validações de negócio  
 • Renovar aluguéis ativos  
