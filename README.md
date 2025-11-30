@@ -432,7 +432,7 @@ curl -X POST http://localhost:5000/api/rentals \
 
 ---
 
-## 🧪 Testes
+##  Testes
 
 ### Executar Testes Unitários
 
@@ -551,7 +551,7 @@ SERVER_SSH_KEY
 
 ---
 
-## 📋 Regras de Negócio
+##  Regras de Negócio
 
 ### Veículos
 
